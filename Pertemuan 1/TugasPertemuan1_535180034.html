@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Information About Your Pages</title>
+    <meta name="description" content="Tugas 1_535180034"/>
+    <meta name="keywords" content="html, git" />
+    <meta name="robots" content="nofollow" />
+    <meta http-equiv="author" content="Ika" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="Fri, 04 April 2014 23:59:59 GMT" />
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <h2>Sub-Heading</h2>
+    <h3>Sub-Sub-Heading</h3>
+    <h4>Sub-Sub-Sub-Heading</h4>
+    <h5>Sub-Sub-Sub-Sub-Heading</h5>
+    <h6>Sub-Sub-Sub-Sub-Sub-Heading</h6>
+
+    <h1>Paragraf,bold,italic,sup,sub</h1>
+    <p>Sebuah paragraf (dari bahasa Yunani <i>paragraphos</i>, "menulis di samping" atau "tertulis di samping") adalah suatu jenis tulisan yang memiliki tujuan atau ide. Awal paragraf ditandai dengan masuknya ke baris baru. Terkadang baris pertama dimasukkan; kadang-kadang dimasukkan tanpa memulai baris baru. Dalam beberapa hal awal paragraf telah ditandai oleh <i>pilcrow </i>(¶).</p>
+    <p>Sebuah paragraf biasanya terdiri dari <b>pikiran, gagasan, atau ide pokok</b> yang dibantu dengan kalimat pendukung. Paragraf non-fiksi biasanya dimulai dengan <sup>umum </sup> dan <sub>bergerak lebih spesifik</sub> sehingga dapat memunculkan argumen atau sudut pandang. Setiap paragraf berawal dari apa yang datang sebelumnya dan berhenti untuk dilanjutkan. Paragraf umumnya terdiri dari tiga hingga tujuh kalimat semuanya tergabung dalam pernyataan berparagraf tunggal. Dalam fiksi prosa, contohnya; tetapi hal ini umum bila paragraf prosa terjadi di tengah atau di akhir. Sebuah paragraf dapat sependek satu kata atau berhalaman-halaman, dan dapat terdiri dari satu atau banyak kalimat. Ketika dialog dikutip dalam fiksi, paragraf baru digunakan setiap kali orang yang dikutip berganti.</p>
+
+    <hr/>
+    <p>baris 1<br /> baris 2 </p>
+    <hr/>
+    <br/>
+    <h1>List</h1>
+    <h2>Ordered List</h2>
+        <ol>
+            <li>satu</li>
+            <li>dua</li>
+        </ol>
+    <h2>Unordered List</h2>
+        <ul>
+            <li>ini</li>
+            <li>itu</li>
+        </ul>
+    <h2>Nested List</h2>
+        <ul>
+            <li>Bawang :
+                <ul>
+                    <li>putih</li>
+                    <li>merah</li>
+                </ul>
+            </li>
+        </ul>
+    <hr/>
+    <h1>LINK</h1>
+    <a href="https://instagram.com">Instagram</a>
+    <hr/>
+    <a href="TugasPertemuan1_535180034.html">Tugas Pertemuan 1</a>
+    <hr/>
+    <a href="mailto:ika.535180034@stu.untar.ac.id">Kirim email ke :Ika 535180034</a>
+    <hr/>
+    <h2>Tautan jendela baru</h2>
+    <a href="https://facebook.com" target="_blank">facebook</a>
+    <hr/>
+    <h2>Tautan ke lokasi spesifik di halaman yang sama</h2>
+
+    <h3 id="top">Film-Making Terms</h3>
+    <a href="#arc_shot">Arc Shot</a><br/>
+    <a href="#interlude">Interlude</a><br/>
+    <a href="#prologue">Prologue</a><br/>
+
+    <h4 id="arc_shot">Arc Shot</h4>
+    <p>A shot in which the subject is photographed by an encircling or moving camera</p>
+
+    <h4 id="interlude">Interlude</h4>
+    <p>A bried,intervening film scene or sequence, not specifically tied to the plot, that appears within a film</p>
+
+    <h4 id="prologue">Prologue</h4>
+    <p>A speech, preface, introduction, or brief scene precending the main action or plot of a film</p>
+
+    <p><a href="#top"></a></p>
+    <hr/>
+    <h1>Gambar</h1>
+    <figure>
+    <img src="images/gambar_ftiuntar.png" alt="fti untar" title="Untar"
+        width="250px"
+        height="300px">
+        <figcaption>fakultas teknologi informasi universitas Tarumanagara</figcaption>
+    </figure>
+    <hr/>
+    <h1>TABLE</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th scope="col">kolom 1</th>
+                <th scope="col">kolom 2</th>
+                <th scope="col">kolom 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">baris 1</th>
+                <td colspan="2">geo</td>
+                <td rowspan="2">math</td>
+            </tr>
+            <tr>
+                <th scope="row">baris 2</th>
+                <td colspan="3">gym</td>
+                <td>home</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>123</td>
+                <td>456</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr/>
+    <h1>Form</h1>
+    <form action="http://www.example.com/login.php">
+        <fieldset>
+            <legend>Masukkan username dan password</legend>
+            <p>Username:
+                <input type="text" name="username" maxlength="30"/></p>
+            <label for="date">Date:</label>
+            <input type="date" name="date"/><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email"/><br><br>
+            <label for="website">Website:</label>
+            <input type="url" name="website"/><br><br>
+            <label>Password:
+                <input type="password" name ="password"/>
+            </label>
+        </fieldset>
+    </form>
+    <form action="http://www.example.com/comments.php" >
+        <p>comments:</p>
+        <textarea name="comments" col="20" rows="4" placeholder="Enter yout comments..."></textarea>
+    </form>
+    <form action="http://www.example.com/profile.php" >
+        <p>Please select your fav genre:
+            <br/>
+            <input type="radio" name="genre" value="rock" checked="checked"/>rock
+            <input type="radio" name="genre" value="pop" />pop
+        </p>
+        <p>What device do you listen to music on?</p>
+        <select name="devices">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="Computer">Computer</option>
+        </select>
+        <p>Do you play any of the following instruments?</p>
+            <select name="instruments" size="3" multiple="multiple">
+                <option value="drums"> Drum</option>
+                <option value="keyboard" selected="selected">Keyboard</option>
+                <option value="bass">bass</option>
+            </select>
+    </form>
+    <form action="http://www.example.com/upload.php" method="post">
+        <p>Upload yout song in MP3 format :</p>
+        <input type="file" name="user-song"/><br>
+        <input type="submit" value="Upload"/>
+    </form>
+    <form action="http://www.example.com/subscribe.php">
+        <p>subscribe to our email list:</p>
+        <input type="text" name="email"/>
+        <input type="submit" name="subscribe"/>
+        <br/>
+        <input type="image" src="images/gambar_subscribe.png" />
+        <input type="hidden" name="bookmark" value="lyrics"/>
+    </form>
+    
+    <hr/>
+    <h1>EXTRA MARKUP</h1>
+    <!--ini comment-->
+    <div id="header">
+        <ul>
+            <li><a href="#prologue">Prologue</a><br/></li>
+        </ul>
+    </div>
+    <p>Anish Kapoor won the Turner Prize in 1991 and exhibited at the<span class="gallery">Tate Modern</span>gallery in London on 2003</p>
+    <iframe src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed"
+        width="450"
+        height="350"
+        framerborder="0"
+        scrolling="no"></iframe>
+    
+</body>
+</html>
