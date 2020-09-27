@@ -1,0 +1,63 @@
+h5{
+    color: seagreen; /*memberikan warna pada h5*/
+    text-decoration: underline;
+    text-indent: 3em;
+    text-shadow: 2px 2px 3px #FF0000;
+    letter-spacing: 3px;
+    word-spacing: 30px;
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.isiteks{
+    color:  #99ccff;
+    font-size: 36px;
+}
+
+p.isiteks{
+    color: #FF0000;
+    font-size: 36px;
+}
+
+#footer{
+    color: blue;
+    border: 1px solid black;
+}
+
+div>h4{
+    color: white;
+    background: green;
+    padding: 2px;
+}
+div h2{
+    font-size: 26px;
+    text-align: center;
+}
+
+h1+h2{
+    color: red;
+    font-weight:300;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: right;
+    vertical-align: none;
+}
+
+div~p{
+    background-color: gray;
+}
+
+.box h1, .box p, .box b{
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #000;
+    padding: 2px;
+}
+
+.box h1 , .box b{
+    background-color: aqua;
+    padding: 5px;
+    margin-top: 40px;
+}
