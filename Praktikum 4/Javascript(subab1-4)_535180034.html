@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>535180034_Praktikum4_Javascript</title>
+
+    <style>
+        .MakeRed {
+            color: red;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function changeLine0Style() {
+            document.getElementById("cLine11").className = "MakeRed";
+        }
+        function ChangeStyle(id, classname){
+            document.getElementById(id).className = classname;
+        }
+        function WriteLog(LogText) {
+            document.getElementById("cLine1").innerHTML = "Hello World";
+            console.log(LogText);
+        }
+        function ChangeAll(str){
+            document.getElementById("Line1").innerHTML = str;
+            document.getElementById("Line2").innerHTML = str;
+            document.getElementById("Line1").className="MakeRed";
+            document.getElementById("Line2").className="MakeRed";
+        }
+        function ChangeContent(id, num) {
+            var x;
+            x = 3;
+            var res = num + x;
+            document.getElementById(id).innerHTML = "3 + " + num + " = " + res;
+        }
+        function AddString(id, str1, str2) {
+            document.getElementById(id).innerHTML = str1 + str2;
+        }
+
+        function Add(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) + Number(inp2);
+        }
+        function Sub(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) - Number(inp2);
+        }
+        function Kali(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) * Number(inp2);
+        }
+        function Bagi(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) / Number(inp2);
+        }
+        function Mod(id, inp1, inp2) {
+            document.getElementById(id).value = Number(inp1) % Number(inp2);
+        }
+        function Pangkat(id, inp1, inp2) {
+            document.getElementById(id).value = Math.pow(Number(inp1),Number(inp2));
+        }
+    </script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <h2>subab 1-4 (Intro,datatype,syntax,object)</h2>
+    <button type="button" onclick='alert("Praktikum 4 - Javascript - 535180034")'>Show Alert</button>
+    <br><br>
+
+    <button type="button" onclick='document.getElementById("cGreeting").innerHTML = "Hello World!"'>Go</button>
+    <p id="cGreeting">Change Content.</p>
+    <br><br>
+
+    <button type="button" onclick='document.getElementById("cStyle").style.fontWeight="800"'>Go</button>
+    <p id="cStyle">Change Style</p>
+    <br><br>
+
+    <button type="button" onclick='document.getElementById("cLine0").className="MakeRed"'>Go</button>
+    <button type="button" onclick='changeLine0Style()'>Go- js in head</button>
+    <button type="button" onclick='changeLineStyle()'>Go- js from file</button>
+    <p id="cLine0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+    <p id="cLine11">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+    <p id="cLine">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+    <br><br>
+
+    <button type="button" onclick='document.getElementById("cLine2").className="Hide"'>Hide This</button>
+    <button type="button" onclick='document.getElementById("cLine2").className="Show"'>Show This</button>
+    
+    <button type="button" onclick='ChangeStyle("cLine2","Hide")'>Hide This -js in head</button>
+    <button type="button" onclick='ChangeStyle("cLine2","Show")'>Show This -js in head</button>
+    <p id="cLine2">Maecenas eu velit accumsan, ullamcorper arcu sit amet, consectetur mi. Suspendisse a pulvinar augue,
+        vel sollicitudin nulla.</p>
+    <br><br>
+
+    <button type="button" onclick='WriteLog("Log this")'>Go</button>
+    <p id="cLine1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+    <br>
+    <p id="Line1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+    <p id="Line2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+    <button type="button" onclick='ChangeAll("535180034")'>Change All</button>
+
+    <hr>
+    <button type="button" onclick='ChangeContent("l1", 500)'>Go</button>
+    <p id="l1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+    <br><br>
+    <button type="button" onclick='AddString("l2", "Hello", "World")'>Go</button>
+    <p id="l2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet ultrices iaculis.</p>
+    <br><br>
+
+    <input type="number" id="iNumAdd1" /> +
+    <input type="number" id="iNumAdd2" />
+    <button type="button"
+        onclick='Add("oResAdd", document.getElementById("iNumAdd1").value , document.getElementById("iNumAdd2").value)'>=</button>
+    <input type="number" id="oResAdd" />
+    <br><br>
+
+    <input type="number" id="iNumSub1" /> -
+    <input type="number" id="iNumSub2" />
+    <button type="button"
+        onclick='Sub("oResSub", document.getElementById("iNumSub1").value , document.getElementById("iNumSub2").value)'>=</button>
+    <input type="number" id="oResSub" />
+    <br><br>
+
+    <input type="number" id="iNumKali1" /> x
+    <input type="number" id="iNumKali2" />
+    <button type="button"
+        onclick='Kali("oResKali", document.getElementById("iNumKali1").value , document.getElementById("iNumKali2").value)'>=</button>
+    <input type="number" id="oResKali" />
+    <br><br>
+
+    <input type="number" id="iNumBagi1" /> /
+    <input type="number" id="iNumBagi2" />
+    <button type="button"
+        onclick='Bagi("oResBagi", document.getElementById("iNumBagi1").value , document.getElementById("iNumBagi2").value)'>=</button>
+    <input type="number" id="oResBagi" />
+    <br><br>
+    
+    <input type="number" id="iNumMod1" /> %
+    <input type="number" id="iNumMod2" />
+    <button type="button"
+        onclick='Mod("oResMod", document.getElementById("iNumMod1").value , document.getElementById("iNumMod2").value)'>=</button>
+    <input type="number" id="oResMod" />
+    <br><br>
+
+    <input type="number" id="iNumPangkat1" /> ^
+    <input type="number" id="iNumPangkat2" />
+    <button type="button"
+        onclick='Pangkat("oResPangkat", document.getElementById("iNumPangkat1").value , document.getElementById("iNumPangkat2").value)'>=</button>
+    <input type="number" id="oResPangkat" />
+    <br><br>
+    <hr>
+    
+    <input type="number" id="iLoop" placeholder="Type number of iteration" style="width: 500px;">
+    <button type="button" onclick='ForLoop(document.getElementById("iLoop").value)'>Go</button>
+    <input type="text" id="iHobby" placeholder="Add your hobby (max 5)" style="width: 500px;">
+    <button type="button" onclick='AddHobby(document.getElementById("iHobby").value)'>Add</button>
+    <button type="button" onclick='InLoop()'>Show All</button>
+
+    <p id="oResult"></p>
+
+    <br><br><hr>
+
+    <input type="text" id="iEmail" placeholder="Masukkan Email" />
+    <input type="text" id="iNIM" placeholder="Masukkan NIM" />
+    <input type="text" id="iName" placeholder="Masukkan Nama" />
+
+    <button type="button"
+        onclick='CreateObject(document.getElementById("iEmail").value, document.getElementById("iNIM").value, document.getElementById("iName").value)'>Create</button>
+    <br><br>
+    <button type="button" onclick='LoadObject()'>Load</button>
+    <input type="text" id="iPerson" style="width: 550px;" height="100px" readonly />
+    <br><br>
+</body>
+</html>
